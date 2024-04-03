@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->x
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./form.js"></script>
+    <style>
+        
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Courses
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">MERN</a>
+                        <a class="dropdown-item" href="#">MEAN</a>
+                        <a class="dropdown-item" href="#">PYTHON</a>
+                        <a class="dropdown-item" href="#">JAVA</a>
+                        <a class="dropdown-item" href="#">FLUTTER</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photo Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mis.html">MIS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="empsalary.html">Emp Salary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Online Test</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://lh4.googleusercontent.com/proxy/biQRn8qQUA-TTjRNiPvpPWr4CDovY3bFYymHT9EDoBAl2npkGUKUczDIwgxg-14XJi4IarJyGdYRSDdUKklU_GxKIZPmm263dkx--5aJ6M5wwZuMqSX6"
+                        class="d-block w-100" height="500" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.techjockey.com/blog/wp-content/uploads/2020/03/Virtual-Classroom.png"
+                        class="d-block w-100" height="500" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://th.bing.com/th/id/OIP._0ONk39TkwZDMoJeVywk8gHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain"
+                        class="d-block w-100" height="500" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+   
+
+    </section>
+
+    <div  class="container"
+        style="width: 500px; margin: 50px auto; border: 1px solid grey; border-radius: 20px; padding: 20px;">
+        <div class="q1">
+                <p>1. HTML is for ?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsq1" id="inlineRadio11"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio11">Static Page</label>
+                </div><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsq1" id="inlineRadio12"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio12">Dynamic Page</label>
+                </div><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsq1" id="inlineRadio13"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio13">Both</label>
+                </div><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsq1" id="inlineRadio14"
+                        value="option4">
+                    <label class="form-check-label" for="inlineRadio14">None of the above</label>
+                </div><br>
+        </div><br>
+        <div class="q2">
+                <p>2. JS is for ?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsq2" id="inlineRadio21"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio21">Static Page</label>
+                </div><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsq2" id="inlineRadio22"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio22">Dynamic Page</label>
+                </div><br>
+                <div class="form-check form-check-inline">
+                    <input cslass="form-check-input" type="radio" name="inlineRadioOptionsq2" id="inlineRadio23"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio23">Both</label>
+                </div><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsq2" id="inlineRadio24"
+                        value="option4">
+                    <label class="form-check-label" for="inlineRadio24">None of the above</label>
+                </div><br>
+        </div>
+        <div class="container" style="display: flex; gap: 50px;  justify-content: center;">
+            <button type="submit" class="btn btn-primary" onclick="quiz(event)">Result</button>
+        </div>
+
+    </div>
+
+    
+    <footer class="text-center bg-body-tertiary ">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+
+</html>
